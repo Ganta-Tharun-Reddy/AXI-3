@@ -1,2 +1,0 @@
-var g_data = {"9":{"pr":"/axi_test_pkg","ty":2,"dui":3,"dun":"work.axi_test_pkg","asserts":[{"n":["axi_master_write_xtns/body/#ublk#170430903#46/immed__49"],"h":[0,1]},{"n":["axi_slave_xtns/body/#ublk#170430903#45/immed__48"],"h":[0,1]},{"n":["axi_vbase_seq/body/immed__41"],"h":[0,1]},{"n":["axi_scoreboard/run_phase/#ublk#170430903#126/immed__148"],"h":[0,1]}],"ad":0}}
-processAssertionsData(g_data);
