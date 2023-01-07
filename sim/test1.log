@@ -1,0 +1,522 @@
+# vsim -cvgperinstance -vopt -voptargs="+acc" -coverage -sva -c -do " log -r /* ;coverage save -onexit axi_cov1;run -all; exit" -wlf wave_file1.wlf -l test1.log -sv_seed random work.top "+UVM_TESTNAME=axi_master_write_xtns_test" 
+# Start time: 11:42:37 on Nov 15,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 2019.2 linux_x86_64 Apr 16 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.axi_intf(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.axi_test_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.axi_intf(fast)
+# Loading /home/cad/eda/Questa_2019/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# Sv_Seed = 1376050875
+#  log -r /* 
+# coverage save -onexit axi_cov1
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test axi_master_write_xtns_test...
+# 
+# ----------master monitor data collected in sb @30------------
+# 
+# WDATA[0]=0
+# WDATA[1]=0
+# WDATA[2]=0
+# WDATA[3]=0
+# WDATA[4]=0
+# WDATA[5]=0
+# WDATA[6]=0
+# WDATA[7]=0
+# WDATA[8]=0
+# WDATA[9]=0
+# WDATA[10]=0
+# WDATA[11]=0
+# WDATA[12]=0
+# WDATA[13]=0
+# WDATA[14]=0
+# 
+# 
+# WSTRB[0]=0
+# WSTRB[1]=0
+# WSTRB[2]=0
+# WSTRB[3]=0
+# WSTRB[4]=0
+# WSTRB[5]=0
+# WSTRB[6]=0
+# WSTRB[7]=0
+# WSTRB[8]=0
+# WSTRB[9]=0
+# WSTRB[10]=0
+# WSTRB[11]=0
+# WSTRB[12]=0
+# WSTRB[13]=0
+# WSTRB[14]=0
+# RDATA[0]=0
+# ----------------------------------------
+# Name        Type             Size  Value
+# ----------------------------------------
+# m_xtn1      axi_transaction  -     @1078
+#   AWID      integral         4     8    
+#   AWADDR    integral         6     'd23 
+#   AWLEN     integral         4     14   
+#   AWSIZE    integral         3     'd1  
+#   AWVALID   integral         1     'd0  
+#   xtn_type  AWBURST          2     FIXED
+#   WID       integral         4     'd0  
+#   WLAST     integral         1     'd0  
+#   WVALID    integral         1     'd0  
+#   BID       integral         4     'd0  
+#   w_resp    BRESP            2     OKAY 
+#   ARID      integral         4     'd0  
+#   ARADDR    integral         6     'd0  
+#   ARLEN     integral         4     'd0  
+#   ARSIZE    integral         3     'd0  
+#   ARVALID   integral         1     'd0  
+#   RID       integral         4     'd0  
+#   r_resp    RRESP            2     OKAY 
+# ----------------------------------------
+# 
+# ----------slave monitor data collected in sb@ 31------------
+# 
+# WDATA[0]=0
+# WDATA[1]=0
+# WDATA[2]=0
+# WDATA[3]=0
+# WDATA[4]=0
+# WDATA[5]=0
+# WDATA[6]=0
+# WDATA[7]=0
+# WDATA[8]=0
+# WDATA[9]=0
+# WDATA[10]=0
+# WDATA[11]=0
+# WDATA[12]=0
+# WDATA[13]=0
+# WDATA[14]=0
+# 
+# 
+# WSTRB[0]=0
+# WSTRB[1]=0
+# WSTRB[2]=0
+# WSTRB[3]=0
+# WSTRB[4]=0
+# WSTRB[5]=0
+# WSTRB[6]=0
+# WSTRB[7]=0
+# WSTRB[8]=0
+# WSTRB[9]=0
+# WSTRB[10]=0
+# WSTRB[11]=0
+# WSTRB[12]=0
+# WSTRB[13]=0
+# WSTRB[14]=0
+# RDATA[0]=0
+# ----------------------------------------
+# Name        Type             Size  Value
+# ----------------------------------------
+# s_xtn1      axi_transaction  -     @1056
+#   AWID      integral         4     8    
+#   AWADDR    integral         6     'd23 
+#   AWLEN     integral         4     14   
+#   AWSIZE    integral         3     'd1  
+#   AWVALID   integral         1     'd0  
+#   xtn_type  AWBURST          2     FIXED
+#   WID       integral         4     'd0  
+#   WLAST     integral         1     'd0  
+#   WVALID    integral         1     'd0  
+#   BID       integral         4     'd0  
+#   w_resp    BRESP            2     OKAY 
+#   ARID      integral         4     'd0  
+#   ARADDR    integral         6     'd0  
+#   ARLEN     integral         4     'd0  
+#   ARSIZE    integral         3     'd0  
+#   ARVALID   integral         1     'd0  
+#   RID       integral         4     'd0  
+#   r_resp    RRESP            2     OKAY 
+# ----------------------------------------
+# Data matched @31   0
+# 
+# ----------master monitor data collected in sb @31------------
+# 
+# WDATA[0]=0
+# 
+# 
+# WSTRB[0]=0
+# RDATA[0]=0
+# RDATA[1]=0
+# RDATA[2]=0
+# RDATA[3]=0
+# RDATA[4]=0
+# RDATA[5]=0
+# RDATA[6]=0
+# ----------------------------------------
+# Name        Type             Size  Value
+# ----------------------------------------
+# m_xtn4      axi_transaction  -     @1090
+#   AWID      integral         4     'd0  
+#   AWADDR    integral         6     'd0  
+#   AWLEN     integral         4     'd0  
+#   AWSIZE    integral         3     'd0  
+#   AWVALID   integral         1     'd0  
+#   xtn_type  AWBURST          2     FIXED
+#   WID       integral         4     'd0  
+#   WLAST     integral         1     'd0  
+#   WVALID    integral         1     'd0  
+#   BID       integral         4     'd0  
+#   w_resp    BRESP            2     OKAY 
+#   ARID      integral         4     8    
+#   ARADDR    integral         6     44   
+#   ARLEN     integral         4     'd6  
+#   ARSIZE    integral         3     'd1  
+#   ARVALID   integral         1     'd0  
+#   RID       integral         4     'd0  
+#   r_resp    RRESP            2     OKAY 
+# ----------------------------------------
+# 
+# ----------slave monitor data collected in sb@ 32------------
+# 
+# WDATA[0]=0
+# 
+# 
+# WSTRB[0]=0
+# RDATA[0]=0
+# RDATA[1]=0
+# RDATA[2]=0
+# RDATA[3]=0
+# RDATA[4]=0
+# RDATA[5]=0
+# RDATA[6]=0
+# ----------------------------------------
+# Name        Type             Size  Value
+# ----------------------------------------
+# s_xtn4      axi_transaction  -     @1068
+#   AWID      integral         4     'd0  
+#   AWADDR    integral         6     'd0  
+#   AWLEN     integral         4     'd0  
+#   AWSIZE    integral         3     'd0  
+#   AWVALID   integral         1     'd0  
+#   xtn_type  AWBURST          2     FIXED
+#   WID       integral         4     'd0  
+#   WLAST     integral         1     'd0  
+#   WVALID    integral         1     'd0  
+#   BID       integral         4     'd0  
+#   w_resp    BRESP            2     OKAY 
+#   ARID      integral         4     8    
+#   ARADDR    integral         6     44   
+#   ARLEN     integral         4     'd6  
+#   ARSIZE    integral         3     'd1  
+#   ARVALID   integral         1     'd0  
+#   RID       integral         4     'd0  
+#   r_resp    RRESP            2     OKAY 
+# ----------------------------------------
+# Data matched @32   1
+# 
+# ----------master monitor data collected in sb @390------------
+# 
+# WDATA[0]=0
+# 
+# 
+# WSTRB[0]=0
+# RDATA[0]=2707
+# RDATA[1]=1e4f
+# RDATA[2]=1517
+# RDATA[3]=6a8a
+# RDATA[4]=4daf
+# RDATA[5]=3b26
+# RDATA[6]=a508
+# ----------------------------------------
+# Name        Type             Size  Value
+# ----------------------------------------
+# m_xtn4      axi_transaction  -     @1090
+#   AWID      integral         4     'd0  
+#   AWADDR    integral         6     'd0  
+#   AWLEN     integral         4     'd0  
+#   AWSIZE    integral         3     'd0  
+#   AWVALID   integral         1     'd0  
+#   xtn_type  AWBURST          2     FIXED
+#   WID       integral         4     'd0  
+#   WLAST     integral         1     'd0  
+#   WVALID    integral         1     'd0  
+#   BID       integral         4     'd0  
+#   w_resp    BRESP            2     OKAY 
+#   ARID      integral         4     8    
+#   ARADDR    integral         6     44   
+#   ARLEN     integral         4     'd6  
+#   ARSIZE    integral         3     'd1  
+#   ARVALID   integral         1     'd0  
+#   RID       integral         4     'd0  
+#   r_resp    RRESP            2     OKAY 
+# ----------------------------------------
+# 
+# ----------slave monitor data collected in sb@ 391------------
+# 
+# WDATA[0]=0
+# 
+# 
+# WSTRB[0]=0
+# RDATA[0]=2707
+# RDATA[1]=1e4f
+# RDATA[2]=1517
+# RDATA[3]=6a8a
+# RDATA[4]=4daf
+# RDATA[5]=3b26
+# RDATA[6]=a508
+# ----------------------------------------
+# Name        Type             Size  Value
+# ----------------------------------------
+# s_xtn4      axi_transaction  -     @1068
+#   AWID      integral         4     'd0  
+#   AWADDR    integral         6     'd0  
+#   AWLEN     integral         4     'd0  
+#   AWSIZE    integral         3     'd0  
+#   AWVALID   integral         1     'd0  
+#   xtn_type  AWBURST          2     FIXED
+#   WID       integral         4     'd0  
+#   WLAST     integral         1     'd0  
+#   WVALID    integral         1     'd0  
+#   BID       integral         4     'd0  
+#   w_resp    BRESP            2     OKAY 
+#   ARID      integral         4     8    
+#   ARADDR    integral         6     44   
+#   ARLEN     integral         4     'd6  
+#   ARSIZE    integral         3     'd1  
+#   ARVALID   integral         1     'd0  
+#   RID       integral         4     'd0  
+#   r_resp    RRESP            2     OKAY 
+# ----------------------------------------
+# Data matched @391   2
+# 
+# ----------master monitor data collected in sb @790------------
+# 
+# WDATA[0]=63
+# WDATA[1]=f5
+# WDATA[2]=f3
+# WDATA[3]=b1
+# WDATA[4]=a3
+# WDATA[5]=35
+# WDATA[6]=27
+# WDATA[7]=24
+# WDATA[8]=2d
+# WDATA[9]=c4
+# WDATA[10]=75
+# WDATA[11]=db
+# WDATA[12]=51
+# WDATA[13]=b1
+# WDATA[14]=91
+# 
+# 
+# WSTRB[0]=0
+# WSTRB[1]=0
+# WSTRB[2]=0
+# WSTRB[3]=0
+# WSTRB[4]=0
+# WSTRB[5]=0
+# WSTRB[6]=0
+# WSTRB[7]=0
+# WSTRB[8]=0
+# WSTRB[9]=0
+# WSTRB[10]=0
+# WSTRB[11]=0
+# WSTRB[12]=0
+# WSTRB[13]=0
+# WSTRB[14]=0
+# RDATA[0]=0
+# ----------------------------------------
+# Name        Type             Size  Value
+# ----------------------------------------
+# m_xtn1      axi_transaction  -     @1078
+#   AWID      integral         4     8    
+#   AWADDR    integral         6     'd23 
+#   AWLEN     integral         4     14   
+#   AWSIZE    integral         3     'd1  
+#   AWVALID   integral         1     'd0  
+#   xtn_type  AWBURST          2     FIXED
+#   WID       integral         4     'd0  
+#   WLAST     integral         1     'd0  
+#   WVALID    integral         1     'd0  
+#   BID       integral         4     'd0  
+#   w_resp    BRESP            2     OKAY 
+#   ARID      integral         4     'd0  
+#   ARADDR    integral         6     'd0  
+#   ARLEN     integral         4     'd0  
+#   ARSIZE    integral         3     'd0  
+#   ARVALID   integral         1     'd0  
+#   RID       integral         4     'd0  
+#   r_resp    RRESP            2     OKAY 
+# ----------------------------------------
+# 
+# ----------slave monitor data collected in sb@ 791------------
+# 
+# WDATA[0]=63
+# WDATA[1]=f5
+# WDATA[2]=f3
+# WDATA[3]=b1
+# WDATA[4]=a3
+# WDATA[5]=35
+# WDATA[6]=27
+# WDATA[7]=24
+# WDATA[8]=2d
+# WDATA[9]=c4
+# WDATA[10]=75
+# WDATA[11]=db
+# WDATA[12]=51
+# WDATA[13]=b1
+# WDATA[14]=91
+# 
+# 
+# WSTRB[0]=0
+# WSTRB[1]=0
+# WSTRB[2]=0
+# WSTRB[3]=0
+# WSTRB[4]=0
+# WSTRB[5]=0
+# WSTRB[6]=0
+# WSTRB[7]=0
+# WSTRB[8]=0
+# WSTRB[9]=0
+# WSTRB[10]=0
+# WSTRB[11]=0
+# WSTRB[12]=0
+# WSTRB[13]=0
+# WSTRB[14]=0
+# RDATA[0]=0
+# ----------------------------------------
+# Name        Type             Size  Value
+# ----------------------------------------
+# s_xtn1      axi_transaction  -     @1056
+#   AWID      integral         4     8    
+#   AWADDR    integral         6     'd23 
+#   AWLEN     integral         4     14   
+#   AWSIZE    integral         3     'd1  
+#   AWVALID   integral         1     'd0  
+#   xtn_type  AWBURST          2     FIXED
+#   WID       integral         4     'd0  
+#   WLAST     integral         1     'd0  
+#   WVALID    integral         1     'd0  
+#   BID       integral         4     'd0  
+#   w_resp    BRESP            2     OKAY 
+#   ARID      integral         4     'd0  
+#   ARADDR    integral         6     'd0  
+#   ARLEN     integral         4     'd0  
+#   ARSIZE    integral         3     'd0  
+#   ARVALID   integral         1     'd0  
+#   RID       integral         4     'd0  
+#   r_resp    RRESP            2     OKAY 
+# ----------------------------------------
+# Data matched @791   3
+# 
+# ----------master monitor data collected in sb @830------------
+# 
+# WDATA[0]=0
+# 
+# 
+# WSTRB[0]=0
+# RDATA[0]=0
+# -----------------------------------------
+# Name        Type             Size  Value 
+# -----------------------------------------
+# m_xtn3      axi_transaction  -     @1086 
+#   AWID      integral         4     'd0   
+#   AWADDR    integral         6     'd0   
+#   AWLEN     integral         4     'd0   
+#   AWSIZE    integral         3     'd0   
+#   AWVALID   integral         1     'd0   
+#   xtn_type  AWBURST          2     FIXED 
+#   WID       integral         4     'd0   
+#   WLAST     integral         1     'd0   
+#   WVALID    integral         1     'd0   
+#   BID       integral         4     8     
+#   w_resp    BRESP            2     EXOKAY
+#   ARID      integral         4     'd0   
+#   ARADDR    integral         6     'd0   
+#   ARLEN     integral         4     'd0   
+#   ARSIZE    integral         3     'd0   
+#   ARVALID   integral         1     'd0   
+#   RID       integral         4     'd0   
+#   r_resp    RRESP            2     OKAY  
+# -----------------------------------------
+# 
+# ----------slave monitor data collected in sb@ 831------------
+# 
+# WDATA[0]=0
+# 
+# 
+# WSTRB[0]=0
+# RDATA[0]=0
+# -----------------------------------------
+# Name        Type             Size  Value 
+# -----------------------------------------
+# s_xtn3      axi_transaction  -     @1064 
+#   AWID      integral         4     'd0   
+#   AWADDR    integral         6     'd0   
+#   AWLEN     integral         4     'd0   
+#   AWSIZE    integral         3     'd0   
+#   AWVALID   integral         1     'd0   
+#   xtn_type  AWBURST          2     FIXED 
+#   WID       integral         4     'd0   
+#   WLAST     integral         1     'd0   
+#   WVALID    integral         1     'd0   
+#   BID       integral         4     8     
+#   w_resp    BRESP            2     EXOKAY
+#   ARID      integral         4     'd0   
+#   ARADDR    integral         6     'd0   
+#   ARLEN     integral         4     'd0   
+#   ARSIZE    integral         3     'd0   
+#   ARVALID   integral         1     'd0   
+#   RID       integral         4     'd0   
+#   r_resp    RRESP            2     OKAY  
+# -----------------------------------------
+# Data matched @831   4
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 4050: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# ** Note: $finish    : /home/cad/eda/Questa_2019/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 4050 ns  Iteration: 54  Instance: /top
+# Saving coverage database on exit...
+# End time: 11:42:40 on Nov 15,2022, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 1

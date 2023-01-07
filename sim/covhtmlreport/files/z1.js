@@ -1,0 +1,2 @@
+var g_data = {"9":{"st":"inst","pa":0,"n":"/axi_test_pkg","l":"SystemVerilog","sn":116,"du":{"n":"work.axi_test_pkg","s":3,"b":1},"bc":[{"n":"axi_test_pkg","s":9,"z":1}],"loc":{"cp":91.66,"data":{"gb":[16,12,1],"cvpc":[8,1],"g":[2,83.33,1],"a":[4,4,1]}}},"3":{"st":"du","pa":0,"n":"work.axi_test_pkg","l":"SystemVerilog","sn":116,"one_inst":9,"loc":{"cp":91.66,"data":{"gb":[16,12,1],"cvpc":[8,1],"g":[2,83.33,1],"a":[4,4,1]}}}};
+processSummaryData(g_data);
